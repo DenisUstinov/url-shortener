@@ -1,5 +1,5 @@
 # Modules Caching
-FROM golang:1.22 as modules
+FROM golang:1.22 AS modules
 
 WORKDIR /app
 
