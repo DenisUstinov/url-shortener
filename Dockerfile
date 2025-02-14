@@ -1,5 +1,5 @@
 # Modules Caching
-FROM golang:1.22 AS modules
+FROM golang:1.23 AS modules
 
 WORKDIR /app
 
@@ -8,7 +8,7 @@ COPY go.mod go.sum ./
 RUN go mod download
 
 # Build
-FROM golang:1.22
+FROM golang:1.23
 
 WORKDIR /app
 
